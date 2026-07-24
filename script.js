@@ -8,7 +8,7 @@ const chatWindow = document.getElementById("chatWindow");
 const typing = document.getElementById("typing");
 
 // Replace with your deployed Cloudflare Worker URL
-const API_URL = "https://loreal-chatbot.yourname.workers.dev";
+const API_URL = "https://loreal-chatbot.shreesatyal34.workers.dev";
 
 
 /* ===============================
