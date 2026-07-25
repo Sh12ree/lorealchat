@@ -123,9 +123,10 @@ async function sendMessage(question) {
     typing.classList.add("hidden");
 
     // Works with Cloudflare Worker response
-    const reply =
+      const reply =
       data.reply ||
       data.choices?.[0]?.message?.content ||
+      data.error ||
       "Sorry, I couldn't generate a response.";
 
     addMessage("bot", reply);
