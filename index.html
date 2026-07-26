@@ -46,104 +46,69 @@
 
         <main>
 
-            <section class="chatbox">
+            <main>
 
-                <div id="chatWindow" class="chat-window">
+<section class="products">
 
-                    <!-- Welcome Message -->
+<h2>Choose Your Products</h2>
 
-                    <div class="bot-message">
+<input 
+id="search"
+type="text"
+placeholder="Search products..."
+>
 
-                        <div class="bubble">
 
-                            👋 Hello! I'm the L'Oréal Smart Product Advisor.
+<div id="productGrid" class="product-grid"></div>
 
-                            <br><br>
 
-                            Ask me questions about:
+<h2>Selected Products</h2>
 
-                            <ul>
+<div id="selectedProducts">
+No products selected
+</div>
 
-                                <li>Skincare routines</li>
 
-                                <li>Haircare products</li>
+<button id="generateRoutine">
+Generate Routine
+</button>
 
-                                <li>Makeup recommendations</li>
 
-                                <li>Ingredients</li>
+</section>
 
-                                <li>Beauty tips</li>
 
-                            </ul>
+<section class="chatbox">
 
-                        </div>
+<div id="chatWindow" class="chat-window"></div>
 
-                    </div>
 
-                </div>
+<div id="typing" class="typing hidden">
+<span></span>
+<span></span>
+<span></span>
+</div>
 
-                <!-- Typing Indicator -->
 
-                <div id="typing" class="typing hidden">
+<form id="chatForm" class="chat-form">
 
-                    <span></span>
-                    <span></span>
-                    <span></span>
 
-                </div>
+<input
+id="userInput"
+placeholder="Ask about your routine..."
+required
+>
 
-                <!-- Chat Form -->
 
-                <form id="chatForm" class="chat-form">
+<button>
+Send
+</button>
 
-                    <label
-                        for="userInput"
-                        class="visually-hidden">
 
-                        Message
+</form>
 
-                    </label>
+</section>
 
-                    <input
-
-                        id="userInput"
-
-                        name="userInput"
-
-                        type="text"
-
-                        placeholder="Ask me about L'Oréal products or routines..."
-
-                        autocomplete="off"
-
-                        required
-
-                    >
-
-                    <button
-                        type="submit"
-                        id="sendBtn">
-
-                        <span class="material-icons">
-
-                            send
-
-                        </span>
-
-                        <span class="visually-hidden">
-
-                            Send
-
-                        </span>
-
-                    </button>
-
-                </form>
-
-            </section>
-
-        </main>
-
+</main>
         <!-- ================= Footer ================= -->
 
         <footer class="site-footer">
